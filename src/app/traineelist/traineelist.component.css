@@ -1,0 +1,64 @@
+nav{
+    margin-left:105px;
+    margin-right:70px;
+    height:70px; 
+}
+
+nav button{
+    border-color: black; 
+    color:black; 
+    background-color:ghostwhite;
+    margin-top:-50px; 
+}
+
+nav button:hover{
+    background-color:#28a745;
+}
+
+.ds{
+    margin-top: 10px;
+    padding: -7px;
+}
+
+.table{
+    margin-top:50px;
+    margin-left:100px;   
+    border:2px solid black; 
+    width:1733px;
+    /*height:700px; */
+}
+td, th{
+    font-size: 22px;
+}
+
+.updatebtn{
+    background-color:royalblue;
+    color: white; 
+}
+
+.update:hover{
+    background-color:green; 
+}
+
+.deletebtn{
+    color: white;
+}
+
+.search{
+    /*width:200px;*/
+    margin-left:100px;
+    margin-top:110px;
+    margin-right:1505px;
+}
+
+.addbtn{
+    margin-left:1550px;
+    width:330px;
+    padding:15px;
+    font-size:16px;     
+}
+
+.title{
+    /*margin-top:-10px;*/
+    font-size: 25px;
+}

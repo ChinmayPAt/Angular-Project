@@ -1,0 +1,33 @@
+<nav class="navbar navbar-light bg-primary nav">
+  <span class="navbar-brand mb-0 h1 title"><b>Trainee List</b></span>
+   <button class="btn btn-outline-success addbtn" type="button" (click)="goToAdd()">ADD Trainee</button>
+</nav>
+<div class="search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 " type="button">Search</button>
+ </div>
+  <table class="table shadow">
+  <thead>
+    <tr>
+      <th scope="col">Sr.No.</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of traineedata">
+      <th scope="row">{{t.id}}</th>
+      <td>{{t.first_name}}</td>
+      <td>{{t.last_name}}</td>
+      <td>{{t.email}}</td>
+      <td>{{t.phone}}</td>
+      <td><button type="button" class="btn btn-secondary btn-lg updatebtn">Update</button></td>
+      <td><button type="button" class="btn btn-danger btn-lg deletebtn" (click)="deleteTrainee(t)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,34 @@
+<div class="container">
+<form [formGroup]="loginForm"><section>
+    <div id="logo">
+        <img src="../assets/logo.png" alt="training logo">
+      </div>
+  <div class="form-group">
+    
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  
+  </div>
+  <div class="alertmsg" *ngIf="loginForm.controls['email'].hasError('pattern')">
+      Please enter valid email address
+    </div>
+    <br>
+    
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" formControlName="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="alertmsg" *ngIf="loginForm.controls['pass'].hasError('pattern')">
+      Password must be 6 characters long and contain a number, a special character , a capital alphabet.</div><br>
+      
+  <button [disabled]="!loginForm.valid"  type="submit" class="btn btn-primary" (click)="goMain()">Login <span class="glyphicon glyphicon-ok"></span></button><br><br>
+  <div id="note">
+    <footer class="p-3">
+      <h3>Note:</h3>
+      <p>Credentials : <em>abhi@mail.com</em> & <em>abhi123</em> <em> only accepted.</em></p>
+      <p>All data will be restored when page refreshed.</p>
+    </footer> </div>
+</section>
+</form>
+</div>
+
